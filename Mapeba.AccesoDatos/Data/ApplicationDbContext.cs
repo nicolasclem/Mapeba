@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+﻿using Mapeba.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace Mapeba.Data
@@ -9,5 +10,7 @@ namespace Mapeba.Data
             : base(options)
         {
         }
+        public DbSet<Categoria> Categorias { get; set; }
+
     }
 }
